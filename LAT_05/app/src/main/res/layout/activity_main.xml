@@ -1,0 +1,62 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="top">
+
+    <TextView
+        android:id="@+id/layout_utama"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#008098"
+        android:text="Grid Layout"
+        android:gravity="fill"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textSize="20dp"/>
+
+    <GridLayout
+        android:id="@+id/Grid_Layout"
+        android:layout_below="@id/layout_utama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_gravity="left|top"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#808080"
+            android:text="Button"/>
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_gravity="left|top"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#808080"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button_03"
+            android:layout_gravity="left|top"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#808080"/>
+
+        <Button
+            android:id="@+id/button_04"
+            android:layout_gravity="left|top"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#808080"
+            android:text="Button"/>
+    </GridLayout>
+
+</RelativeLayout>
